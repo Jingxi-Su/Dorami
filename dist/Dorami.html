@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+    <title>Dorami</title>
+  </head>
+  <body>
+    <div id="demo"></div>
+    <style id="demo2"></style>
+    <div id="buttons">
+      <button id="btnPlay">播放</button>
+      <button id="btnPause">暂停</button>
+      <button id="btnFast">快速</button>
+      <button id="btnNormal">中速</button>
+      <button id="btnSlow">慢速</button>
+    </div>
+    <style>* {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      *::after {
+        box-sizing: border-box;
+      }
+      *::before {
+        box-sizing: border-box;
+      }
+      #buttons {
+        position: fixed;
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        right: 0;
+        top: 0;
+        padding: 4px 8px;
+      }
+      #buttons > button {
+        margin-bottom: 5px;
+      }
+      #demo2 {
+        display: none;
+      }
+      #demo {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 40vh;
+        overflow-y: auto;
+      }
+      #demo::-webkit-scrollbar {
+        display: none;
+      }
+      .background {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 60vh;
+      }
+</style>
+    <div class="background">
+      <div class="ribbon" id="ribbon-left"></div>
+      <div class="ribbon" id="ribbon-right"></div>
+      <div id="head"></div>
+      <div id="head-white"></div>
+      <div class="eyebrow" id="eyebrow-left"></div>
+      <div class="eyebrow" id="eyebrow-right"></div>
+      <div class="eyelash" id="eyelash-left1"></div>
+      <div class="eyelash" id="eyelash-left2"></div>
+      <div class="eyelash" id="eyelash-left3"></div>
+      <div class="eyelash" id="eyelash-right1"></div>
+      <div class="eyelash" id="eyelash-right2"></div>
+      <div class="eyelash" id="eyelash-right3"></div>
+      <div class="eye" id="eye-left"></div>
+      <div class="eye" id="eye-right"></div>
+      <div class="eye-pupil" id="eye-pupil-left"></div>
+      <div class="eye-pupil" id="eye-pupil-right"></div>
+      <div class="eye-white" id="eye-white-left"></div>
+      <div class="eye-white" id="eye-white-right"></div>
+      <div class="eye-start" id="eye-start-left"></div>
+      <div class="eye-start" id="eye-start-right"></div>
+      <div class="blush" id="blush-left"></div>
+      <div class="blush" id="blush-right"></div>
+      <div id="nose"></div>
+      <div id="nose-white"></div>
+      <div id="nose-top"></div>
+      <div id="mouth"></div>
+      <div id="collar"></div>
+      <div class="bell">
+        <div class="bell-front"></div>
+        <div class="bell-front-hole"></div>
+      </div>
+    </div>
+    <script src="/Dorami.0afc8a97.js"></script>
+  </body>
+</html>
